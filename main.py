@@ -7,13 +7,22 @@ if __name__ == "__main__":
         name = input("What is your name?")
         print("Hello %s" %name)
 
-        num = int(input("Enter a Number"))
+        test_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0,]
 
-        if num > 10:
-            print("The Number Is Greater Than 10")
-        if num < 10:
-            print("The Number Is Less Than 10")
-        if num == 10:
-            print("The Number Is 10")
+        Number = int(input("Enter A Number"))
+
+
+        count = 0
+        for x in test_list:
+            if x > Number:
+                count = count + 1
+
+        print("The numbers greater than your input is " + str(count))
+
+
+
+        Number2 = int(input("Enter A Number"))
+        if Number2 % 2 == 0:
+            print("Even")
         else:
-            print("That Is Not A Number")
+            print("Odd")
