@@ -1,8 +1,5 @@
-import random
-for x in range(1):
-  print( random.randint(1,101) )
 
-# Class Selection Screen
+# Start Of Class Selection
 x = 0
 
 while x == 0:
@@ -19,12 +16,19 @@ while x == 0:
         if yn1 == ("yes"):
             x = 1
 
+        elif yn1 == ("Yes"):
+            x = 1
+
     elif Class == 2:
         print("You Would Like To Be A Rogue?")
         yn1 = input ("")
         print("")
         if yn1 == ("yes"):
             x = 1
+
+        elif yn1 == ("Yes"):
+            x = 1
+
 
     elif Class == 3:
         print("You Would Like To Be A Mage?")
@@ -33,5 +37,11 @@ while x == 0:
         if yn1 == ("yes"):
             x = 1
 
+        elif yn1 == ("Yes"):
+            x = 1
+
+
     else:
-        print ("What?")
+        print ("")
+
+# End Of Class Selection
