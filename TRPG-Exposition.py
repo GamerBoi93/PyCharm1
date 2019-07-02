@@ -1,11 +1,11 @@
 import time
 
 
-def game():
+def exposition():
     print("")
 
 
-# Start Of Intro Scene
+#Start Of Intro Scene
 print("Hello Young Adventurer, What Is Your Name?")
 print("")
 Name = (input(""))
