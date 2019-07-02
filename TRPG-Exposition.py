@@ -1,5 +1,5 @@
 import time
-
+from firstfight import firstfight
 
 def exposition():
     print("")
@@ -85,3 +85,5 @@ print('"Welcome To The Arena!" The Shop Merchant Behind You Said.')
 print("")
 time.sleep(1)
 print('"Well, No Time For Talking, Lets Get To Fighting!"')
+
+firstfight()
