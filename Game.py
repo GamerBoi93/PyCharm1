@@ -1,5 +1,6 @@
 import pygame
 import random
+import sys
 from pygame.locals import *
 
 pygame.init()
@@ -44,6 +45,8 @@ def main():
         screen.blit(sprite_image, sprite_rect)
         pygame.display.flip()
 
+        for event in pygame.event.get():
+            if event.type == QUIT: sys.exit()
 
 if __name__ == '__main__':
     main()
