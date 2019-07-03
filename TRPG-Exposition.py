@@ -142,6 +142,7 @@ print("What Will You Do?")
 fighting = True
 
 while fighting:
+
     print("1. Fight     2. Item     3. Run")
     mspeed = ((mspeed * (mluck / 2)) / 2) - random.randint(1, 6)
     speed = ((speed * (luck / 2)) / 2) - random.randint(1, 6)
@@ -149,7 +150,6 @@ while fighting:
 
     # if fight1 == 1:
     if speed > mspeed:
-        attack = attack
         damage = ((attack * 5)(luck / 4) / 2) / mdefense
         round(int(damage))
         print (damage)
@@ -172,6 +172,7 @@ while fighting:
             print("The Slime Now Has", mhealth,  "Health Remaining!")
 
     elif mspeed > speed:
+        mattack = mattack
         mdamage = ((mattack * 5)(mluck / 4) / 2) / defense
 
         print("You Attacked The Slime And Delt", damage, "Damage!")
